@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>OMDb API</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.css">
+  </head>
+  <body>
+
+    <div class="container text-center">
+      <select class="select2" name="country">
+        <option value="PT">Portugal</option>
+        <option value="ES">Spain</option>
+        <option value="FR">France</option>
+        <option value="UK">United Kingdom</option>
+        <option value="RS">Serbia</option>
+      </select>
+
+
+      <textarea class="form-control" id="editor" rows="4"></textarea>
+      <div id="preview"></div>
+
+
+      <form class="form-inline justify-content-center p-4" id="search-form">
+      	<div class="col-auto my-2">
+        	<input type="text" class="form-control" placeholder="Find movie" id="search-input">
+        </div>
+        <div class="col-auto my-2">
+	        <input type="submit" class="btn btn-primary">
+	    </div>
+      </form>
+      <ul id="results" class="list-inline"></ul>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
